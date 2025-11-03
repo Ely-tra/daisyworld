@@ -8,9 +8,10 @@ This project is implemented using Python and Pygame, with physically-motivated t
 
 ## How to Run
 
-1. Extract distribution package (`DAYNIGHT_PACKED.zip`)
-2. Launch the main Python script
-3. Configure environmental conditions and observe system evolution
+1. Clone the Git
+2. CD to the folder
+3. Launch the main.py Python script
+4. Configure environmental conditions and observe system evolution
 ---
 
 ## System Requirements
