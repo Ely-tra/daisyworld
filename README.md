@@ -94,40 +94,9 @@ Users can explore climate resilience, thermal sensitivity, ecological thresholds
 
 ---
 
-## Example Research Questions
-
-- How do organisms stabilize global temperatures under reduced solar input?
-- What happens when mortality slightly exceeds growth?
-- How fast does the environment recover after a thermal perturbation?
-- Under what parameter regimes does Daisyworld collapse?
-
-This makes the model suitable for **climate science coursework**, **research demonstrations**, and **complex systems studies**.
-
----
-
-## References
-
-Key scientific foundations include:
-- Lovelock & Margulis (1974) — The Gaia Hypothesis
-- Lovelock & Watson (1983) — Biological homeostasis in Daisyworld
-- Additional citations provided in the documentation  
-
-
----
-
-## Project Status
-
-> Active prototype designed for research and educational use.  
-> Additional environmental cycles (e.g., hydrology) planned for future versions.  
-> Current water representation is placeholder-only.
-
----
-
 ## Author
 
 **Minh Khanh Luong**  
-Department of Earth & Atmospheric Science
+Indiana University, Department of Earth & Atmospheric Science
 
 ---
-
-### Explore emergent climate regulation through interactive ecological physics.
