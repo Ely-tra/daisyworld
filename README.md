@@ -10,7 +10,18 @@ This project is implemented using Python and Pygame, with physically-motivated t
 
 1. Extract distribution package (`DAYNIGHT_PACKED.zip`)
 2. Launch the main Python script
-3. Configure environmental conditions and observe system evolution  
+3. Configure environmental conditions and observe system evolution
+---
+
+## System Requirements
+
+- Python 3.x
+- Pygame ≥ 2.6.1
+- Anaconda recommended for environment management  
+  (as used during development) 
+
+
+ 
 ---
 
 ## Scientific Overview
@@ -80,16 +91,6 @@ Users can explore climate resilience, thermal sensitivity, ecological thresholds
 - Maximum growth response (`T_OPTIMAL` and tolerance range)
 - Simulation time-flow speed
 - Screen position of temperature overlay (`overlay_shift_*`)
-
-
----
-
-## System Requirements
-
-- Python 3.x
-- Pygame ≥ 2.6.1
-- Anaconda recommended for environment management  
-  (as used during development) 
 
 
 ---
