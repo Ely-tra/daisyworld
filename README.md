@@ -2,7 +2,7 @@
 
 **2.5D Daisyworld** is a scientific simulation designed to explore climate–biosphere feedback processes inspired by the **Gaia hypothesis** and the original **Daisyworld** conceptual model. It provides a configurable and visual framework to examine how organisms modify their environment to maintain habitability.
 
-This project is implemented using Python and Pygame, with physically-motivated thermal and ecological parameterizations. :contentReference[oaicite:0]{index=0}
+This project is implemented using Python and Pygame, with physically-motivated thermal and ecological parameterizations.
 
 ---
 
@@ -12,7 +12,7 @@ In Daisyworld systems:
 
 - Surface albedo changes based on organism (daisy) coverage
 - Temperature affects growth and mortality
-- Biota-climate interactions form **stabilizing or destabilizing feedback loops** :contentReference[oaicite:1]{index=1}
+- Biota-climate interactions form **stabilizing or destabilizing feedback loops** 
 - Environmental equilibrium emerges from local interactions rather than external control
 
 This version extends the classic model:
@@ -22,7 +22,7 @@ This version extends the classic model:
 ✔ Adjustable solar forcing  
 ✔ Dynamic growth and mortality  
 ✔ Visual performance indicators (land cover, growth rate, temperature history)  
-:contentReference[oaicite:2]{index=2}
+
 
 ---
 
@@ -48,9 +48,9 @@ Users can explore climate resilience, thermal sensitivity, ecological thresholds
 | `SPREAD_CHANCE`, `DEATH_CHANCE` | Ecology | Colonization and mortality probabilities |
 | `INFLUENCE_LEVEL` | Physics | Neighborhood radius for diffusion and spread |
 | `DAY_BORDER_SPEED` | Diurnal cycle | Velocity of day–night terminator |  
-:contentReference[oaicite:3]{index=3}
 
-All parameters are documented within the project and many can be modified during simulation runtime via an interface. :contentReference[oaicite:4]{index=4}
+
+All parameters are documented within the project and many can be modified during simulation runtime via an interface.
 
 ---
 
@@ -59,7 +59,7 @@ All parameters are documented within the project and many can be modified during
 - Python 3.x
 - Pygame ≥ 2.6.1
 - Anaconda recommended for environment management  
-  (as used during development) :contentReference[oaicite:5]{index=5}
+  (as used during development) 
 
 ---
 
@@ -68,7 +68,7 @@ All parameters are documented within the project and many can be modified during
 1. Extract distribution package (`DAYNIGHT_PACKED.zip`)
 2. Launch the main Python script
 3. Configure environmental conditions and observe system evolution  
-   :contentReference[oaicite:6]{index=6}
+
 
 ---
 
@@ -89,7 +89,7 @@ Key scientific foundations include:
 - Lovelock & Margulis (1974) — The Gaia Hypothesis
 - Lovelock & Watson (1983) — Biological homeostasis in Daisyworld
 - Additional citations provided in the documentation  
-  :contentReference[oaicite:7]{index=7}
+
 
 ---
 
@@ -97,7 +97,7 @@ Key scientific foundations include:
 
 > Active prototype designed for research and educational use.  
 > Additional environmental cycles (e.g., hydrology) planned for future versions.  
-> Current water representation is placeholder-only. :contentReference[oaicite:8]{index=8}
+> Current water representation is placeholder-only.
 
 ---
 
