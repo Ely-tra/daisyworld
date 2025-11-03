@@ -37,20 +37,49 @@ Users can explore climate resilience, thermal sensitivity, ecological thresholds
 
 ---
 
-## Model Parameters (Selected)
+## 🔧 Configurable Parameters
 
 | Parameter | Category | Description |
 |----------|----------|-------------|
-| `SUN_SCREENING` | Radiation | Incoming solar flux |
-| `ALBEDO_*` | Surface properties | Reflectivity of black/white daisies, soil, water |
-| `T_OPTIMAL`, `T_TOL_LOW/HIGH` | Biology | Growth dependence on temperature |
-| `HEATING_RATE` | Thermodynamics | Relaxation to solar-driven equilibrium |
-| `SPREAD_CHANCE`, `DEATH_CHANCE` | Ecology | Colonization and mortality probabilities |
-| `INFLUENCE_LEVEL` | Physics | Neighborhood radius for diffusion and spread |
-| `DAY_BORDER_SPEED` | Diurnal cycle | Velocity of day–night terminator |  
+| `map_width` | Display / Grid | World width in pixels; sets number of horizontal cells |
+| `map_height` | Display / Grid | World height in pixels; sets number of vertical cells |
+| `temp_thickness` | Visualization | Vertical exaggeration of temperature overlay bars |
+| `overlay_shift_x`, `overlay_shift_y`, `overlay_shift_z` | Visualization | Pixel offsets for aligning and stacking heat overlay layers |
 
+| `T_space` | Thermodynamics | Ambient reference temperature for cooling term |
+| `INITIAL_TEMPERATURE` | Thermodynamics | Starting temperature for all non-water cells |
+| `HEATING_RATE` | Thermodynamics | Rate of adjustment toward solar-heated equilibrium |
+| `HEAT_DIFFUSION_COEFFICIENT` | Thermodynamics | Legacy parameter — not used in current version |
+| `COOLING_COEFFICIENT` | Thermodynamics | Radiative cooling coefficient (Stefan–Boltzmann-style) |
 
-All parameters are documented within the project and many can be modified during simulation runtime via an interface.
+| `SUN_SCREENING` | Radiation | Incoming solar flux (similar to solar constant) |
+| `ALBEDO_BLACK` | Surface / Radiation | Reflectivity of black daisies — low albedo → heat absorption |
+| `ALBEDO_WHITE` | Surface / Radiation | Reflectivity of white daisies — high albedo → cooling |
+| `ALBEDO_BARE` | Surface / Radiation | Reflectivity of bare soil |
+| `ALBEDO_WATER` | Surface / Radiation | Reflectivity of water tiles |
+
+| `T_OPTIMAL` | Biology | Temperature maximizing daisy growth |
+| `T_TOL_LOW`, `T_TOL_HIGH` | Biology | Growth drop-off when too cold / too hot |
+| `SPREAD_CHANCE` | Biology | Colonization probability for empty adjacent cells |
+| `DEATH_CHANCE` | Biology | Mortality probability per timestep |
+
+| `INFLUENCE_LEVEL` | Interaction Scale | Neighborhood size for spread + heat diffusion (1 = 4-way, 2 = 8-way, >2 = circular) |
+| `CUM_MOR_NET` | Diagnostics | History window for cumulative mortality graph |
+
+| `DAY_BORDER_SPEED` | Diurnal Cycle | Speed of moving day-night boundary |
+| `DAY_PERIOD` | Diurnal Cycle | Deprecated — replaced by `DAY_BORDER_SPEED` |
+
+| `THRESHOLD` | Stability / Numerics | Prevents divide-by-zero / unrealistic gradients |
+| `THRESHOLD_TMID` | Stability / Numerics | Convergence threshold for equilibrium temperature solver |
+| `MAX_ITERS_TMID` | Stability / Numerics | Max iterations before solver aborts |
+
+### 🔄 Parameters Adjustable During Simulation
+
+- Solar irradiance (`SUN_SCREENING`)
+- Maximum growth response (`T_OPTIMAL` and tolerance range)
+- Simulation time-flow speed
+- Screen position of temperature overlay (`overlay_shift_*`)
+
 
 ---
 
