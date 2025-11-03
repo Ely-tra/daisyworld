@@ -6,6 +6,13 @@ This project is implemented using Python and Pygame, with physically-motivated t
 
 ---
 
+## How to Run
+
+1. Extract distribution package (`DAYNIGHT_PACKED.zip`)
+2. Launch the main Python script
+3. Configure environmental conditions and observe system evolution  
+---
+
 ## Scientific Overview
 
 In Daisyworld systems:
@@ -89,14 +96,6 @@ Users can explore climate resilience, thermal sensitivity, ecological thresholds
 - Pygame ≥ 2.6.1
 - Anaconda recommended for environment management  
   (as used during development) 
-
----
-
-## How to Run
-
-1. Extract distribution package (`DAYNIGHT_PACKED.zip`)
-2. Launch the main Python script
-3. Configure environmental conditions and observe system evolution  
 
 
 ---
